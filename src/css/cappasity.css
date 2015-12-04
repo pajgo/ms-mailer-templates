@@ -26,6 +26,24 @@ p {
   color: rgb(155, 155, 155);
 }
 
+.cappasity-button {
+  background-color: rgb(242, 12, 139);
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.cappasity-button:active, .cappasity-button:focus, .cappasity-button:hover, .cappasity-button:visited {
+  color: rgb(255, 255, 255) !important;
+}
+
+.cappasity-button:hover {
+  background-color: rgb(255, 0, 139);
+}
+
 address {
   font-style: normal;
 }

@@ -6,6 +6,7 @@ const imagemin = require('gulp-imagemin');
 const pngcrush = require('imagemin-pngcrush');
 const del = require('del');
 const preprocess = require('gulp-preprocess');
+const htmlmin = require('gulp-htmlmin');
 const Datauri = require('datauri');
 
 const paths = {
@@ -73,6 +74,7 @@ gulp.task('templatesProduction', [ 'clean', 'css' ], function buildProdTemplates
       removeLinkTags: false,
       preserveMediaQueries: true,
     }))
+    .pipe(htmlmin({ removeComments: true, collapseWhitespace: true, minifyCSS: true }))
     .pipe(gulp.dest(paths.dist + 'templates'));
 });
 
