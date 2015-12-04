@@ -19,8 +19,7 @@ const paths = {
 };
 
 // data uri part
-function toBase64(args) {
-  const [ path, env ] = args;
+function toBase64(path, env) {
   return env === 'production' ? new Datauri(__dirname + path).content : path;
 }
 
@@ -31,6 +30,7 @@ gulp.task('clean', del.bind(null, [ paths.dist, paths.preview ]));
 gulp.task('connect', function previewServer() {
   connect.server({
     livereload: true,
+    root: 'preview',
   });
 
   return gulp.watch([ paths.filesToMove, paths.templates ], [ 'default' ]);
@@ -55,8 +55,8 @@ gulp.task('imagemin', [ 'clean' ], function minifyImages() {
 // preview templates
 gulp.task('templates', [ 'clean' ], function buildTemplates() {
   return gulp.src(paths.templates)
+    .pipe(preprocess({ context: { NODE_ENV: 'development', toBase64 }, extension: '.html' }))
     .pipe(inlinesource({ swallowErrors: false }))
-    .pipe(preprocess({ context: { NODE_ENV: 'development', toBase64 }}))
     .pipe(gulp.dest(paths.preview + 'templates'))
     .pipe(connect.reload());
 });
@@ -64,11 +64,11 @@ gulp.task('templates', [ 'clean' ], function buildTemplates() {
 // production templates
 gulp.task('templatesProduction', [ 'clean', 'css' ], function buildProdTemplates() {
   return gulp.src(paths.templates)
+    .pipe(preprocess({ context: { NODE_ENV: 'production', toBase64 }, extension: '.html' }))
     .pipe(inlinesource({
       swallowErrors: false,
       rootpath: __dirname + '/src',
     }))
-    .pipe(preprocess({ context: { NODE_ENV: 'production', toBase64 }}))
     .pipe(inlineCss({
       removeLinkTags: false,
       preserveMediaQueries: true,
