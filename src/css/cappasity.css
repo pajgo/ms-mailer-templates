@@ -34,6 +34,7 @@ p {
   padding: 10px 20px;
   text-align: center;
   border-radius: 3px;
+  overflow: hidden;
 }
 
 .cappasity-button:active, .cappasity-button:focus, .cappasity-button:hover, .cappasity-button:visited {
@@ -55,9 +56,12 @@ address {
 
 .social > a {
   display: inline-block;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .social > a > img {
+  border-radius: 6px;
   width: 32px !important;
   height: 32px !important;
 }
