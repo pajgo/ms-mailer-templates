@@ -10,40 +10,39 @@
     </style>
   </head>
   <body>
-    <body>
-      <table class="body">
-        <tr>
-          <td class="center" align="center" valign="top">
-            <center>
-              <table class="container">
-                <tr>
-                  <td>
-                    <table class="block-grid">
-                      <tr>
-                        <td>
-                          <h4>
-                            Dear {{ username }}, follow the link to reset your password
-                          </h4>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <p>
-                            If you didn't request password reset - ignore this message, or, if you are worried about safety of your account,
-                            contact us at <a href="mailto:{{ support }}">{{ support }}</a>
-                          </p>
-                          <p>
-                            Press the link <a href="{{ link }}{{ qs }}">{{ link }}</a> to change your password
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </center>
-          </td>
-        </tr>
-      </table>
-    </body>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
+            <table class="container">
+              <tr>
+                <td>
+                  <table class="block-grid">
+                    <tr>
+                      <td>
+                        <h4>
+                          Dear {{ username }}, follow the link to reset your password
+                        </h4>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>
+                          If you didn't request password reset - ignore this message, or, if you are worried about safety of your account,
+                          contact us at <a href="mailto:{{ support }}">{{ support }}</a>
+                        </p>
+                        <p>
+                          Press the link <a href="{{ link }}{{ qs }}">{{ link }}</a> to change your password
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
