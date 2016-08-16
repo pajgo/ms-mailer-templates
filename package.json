@@ -32,6 +32,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.11.6",
     "chai": "^3.4.0",
+    "cz-conventional-changelog": "^1.1.6",
     "datauri": "^1.0.0-alpha.5",
     "del": "^2.2.2",
     "eslint": "^3.3.0",
@@ -49,5 +50,13 @@
     "imagemin-pngcrush": "^5.0.0",
     "mocha": "^3.0.2",
     "semantic-release": "^4.3.5"
+  },
+  "release": {
+    "verifyConditions": []
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
