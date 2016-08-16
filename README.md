@@ -1,5 +1,7 @@
 # Templates for Mailer Microservice
 
+[![Build Status](https://semaphoreci.com/api/v1/makeomatic/ms-mailer-templates/branches/master/shields_badge.svg)](https://semaphoreci.com/makeomatic/ms-mailer-templates)
+
 Uses foundation ink by zurb for creating basic responsive styles. By default includes the most simple
 templates for account activation and password reset.
 
