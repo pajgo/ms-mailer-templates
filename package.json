@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/makeomatic/ms-mailer-templates#readme",
   "dependencies": {
+    "bluebird": "^3.4.1",
     "common-errors": "^1.0.0",
     "handlebars": "^4.0.5"
   },
