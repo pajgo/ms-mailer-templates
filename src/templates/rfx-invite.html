@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width"/>
 
     <link rel="stylesheet" href="../css/ink.css" inline>
+    <link rel="stylesheet" href="../css/radiofx.css" inline>
     <style type="text/css">
       /* Custom styles go here */
     </style>
@@ -18,18 +19,23 @@
               <tr>
                 <td>
                   <table class="block-grid">
-                    <tr>
-                      <td>
-                        <h4>
-                          Dear {{ firstName }} {{ lastName }}, follow the link to complete registration of your school
-                        </h4>
+                    <tr class="column">
+                      <td class="twelve">
+                        <img src="https://cdn.radiofx.co/emails/rfx-logo-w25@2x.png?v=1" width="307px" height="51px" class="header-padding center" />
                       </td>
                     </tr>
-                    <tr>
-                      <td>
-                        <p>
-                          Press the link <a href="{{ link }}{{ qs }}">{{ link }}</a> to access registration page
+                    <tr class="column">
+                      <td class="twelve">
+                        <p class="section-padding">
+                          Dear {{ firstName }} {{ lastName }}, follow the link to complete registration of your school
                         </p>
+                      </td>
+                    </tr>
+                    <tr class="column">
+                      <td class="twelve">
+                        <div class="section-padding" style="text-align: center;">
+                          <a class="rfx-button" href="{{ link }}{{ qs }}&email={{ email }}&firstName={{ firstName }}&lastName={{ lastName }}">Register Account</a>
+                        </div>
                       </td>
                     </tr>
                   </table>
