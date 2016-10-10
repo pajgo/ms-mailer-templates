@@ -18,7 +18,7 @@ const ext = '.html';
 const templates = {};
 fs.readdirSync(templateDirectory)
   .filter(filename => path.extname(filename) === ext)
-  .forEach(filename => {
+  .forEach((filename) => {
     templates[path.basename(filename, ext)] = hbs.compile(fs.readFileSync(`${templateDirectory}/${filename}`, 'utf-8'));
   });
 
