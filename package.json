@@ -7,7 +7,7 @@
     "test": "npm run lint && npm run build && NODE_ENV=development mocha -r babel-register",
     "lint": "eslint ./src",
     "build": "node -r babel-register ./node_modules/.bin/gulp production",
-    "build-local": "node -r babel-register ./node_modules/.bin/gulp watch",
+    "dev": "node -r babel-register ./node_modules/.bin/gulp watch",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -35,8 +35,8 @@
     "cz-conventional-changelog": "^1.2.0",
     "datauri": "^1.0.0-alpha.5",
     "del": "^2.2.2",
-    "eslint": "^3.7.1",
-    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.0.1",
     "eslint-plugin-mocha": "^4.7.0",
     "gulp": "^3.9.0",
@@ -49,7 +49,7 @@
     "gulp-preprocess": "^2.0.0",
     "imagemin-pngcrush": "^5.0.0",
     "mocha": "^3.1.2",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^6.3.2"
   },
   "release": {
     "verifyConditions": []

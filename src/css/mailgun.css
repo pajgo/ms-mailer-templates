@@ -48,11 +48,19 @@ body {
   clear: both !important;
 }
 
+.container-max {
+  max-width: 1400px !important;
+}
+
 .content {
   max-width: 600px;
   margin: 0 auto;
   display: block;
   padding: 20px;
+}
+
+.content-max {
+  max-width: 1400px;
 }
 
 /* -------------------------------------
@@ -138,6 +146,10 @@ p li, ul li, ol li {
 a {
   color: #FF008B;
   text-decoration: underline;
+}
+
+.block {
+  display: block;
 }
 
 .btn-primary {
