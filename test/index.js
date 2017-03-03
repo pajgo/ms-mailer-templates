@@ -15,7 +15,7 @@ describe('TemplateSuite', function testSuite() {
   });
 
   it('should reject promise on invalid context', function test() {
-    return this.render('cappasity-activate', null)
+    return this.render('cpst-activate', null)
       .reflect()
       .then(function inspectError(promise) {
         expect(promise.isRejected()).to.be.eq(true);
@@ -24,7 +24,7 @@ describe('TemplateSuite', function testSuite() {
   });
 
   it('should return rendered template on valid context and existing template', function test() {
-    return this.render('cappasity-activate', { username: 'vasya', link: 'http://localhost', qs: '?test=ok' })
+    return this.render('cpst-activate', { username: 'vasya', link: 'http://localhost', qs: '?test=ok' })
       .reflect()
       .then(function inspectError(promise) {
         expect(promise.isRejected()).to.be.eq(false);
@@ -34,7 +34,7 @@ describe('TemplateSuite', function testSuite() {
   });
 
   it('should return rendered template on valid context and existing template with missing username', function test() {
-    return this.render('cappasity-activate', { link: 'http://localhost', qs: '?test=ok' })
+    return this.render('cpst-activate', { link: 'http://localhost', qs: '?test=ok' })
       .reflect()
       .then(function inspectError(promise) {
         expect(promise.isRejected()).to.be.eq(false);
