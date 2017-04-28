@@ -1,5 +1,7 @@
 # Templates for Mailer Microservice
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/makeomatic/ms-mailer-templates.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://semaphoreci.com/api/v1/makeomatic/ms-mailer-templates/branches/master/shields_badge.svg)](https://semaphoreci.com/makeomatic/ms-mailer-templates)
 
 Uses foundation ink by zurb for creating basic responsive styles. By default includes the most simple
