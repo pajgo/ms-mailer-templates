@@ -26,7 +26,8 @@
                       <br/>
                       <p>
                         Transaction <b>{{ txId }}</b> of <b>${{ usdAmount }}</b> that you've deposited <b>{{ time }}</b> is
-                        too low to be accepted by the system. Your current total balance on wallet {{ wallet }} is <b>${{ walletBalance }}</b>.
+                        too low to be accepted by the system. Your current balance including transactions over 1 confirmation
+                        on wallet <b>{{ wallet }}</b> is <b>${{ walletBalance }}</b>.
                       </p>
                       <p>
                         {{#if topUp}}
