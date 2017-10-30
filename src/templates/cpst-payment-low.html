@@ -25,8 +25,8 @@
                       <h2>Ineligible Transaction - Action Required</h2>
                       <br/>
                       <p>
-                        Transaction <b>{{ txId }}</b> of <b>${{ usdAmount }}</b> that you've made <b>{{ time }}</b> is
-                        too low to be accepted by the system. Your current total balance is <b>${{ walletBalance }}</b>.
+                        Transaction <b>{{ txId }}</b> of <b>${{ usdAmount }}</b> that you've deposited <b>{{ time }}</b> is
+                        too low to be accepted by the system. Your current total balance on wallet {{ wallet }} is <b>${{ walletBalance }}</b>.
                       </p>
                       <p>
                         {{#if topUp}}
