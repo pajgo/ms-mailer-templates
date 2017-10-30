@@ -30,5 +30,5 @@ It checks for incorrect context, missing template and so on
 
 ## Roadmap
 
-1. Add more tempalates
+1. Add more templates
 2. Add localization
