@@ -1,6 +1,7 @@
 {
   "name": "ms-mailer-templates",
   "description": "Templates for mailer microservice",
+  "version": "0.0.0-development",
   "main": "./lib/index.js",
   "scripts": {
     "prepublish": "yarn build && babel ./src -d ./lib",
