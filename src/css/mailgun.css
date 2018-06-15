@@ -253,10 +253,12 @@ a {
 ----------------------------------------- */
 .airdrop {
   width: 100%;
+  table-layout: fixed;
 }
 
 .airdrop .fixed-size {
   width: 70px;
+  min-width: 70px;
 }
 
 .airdrop .floating {
