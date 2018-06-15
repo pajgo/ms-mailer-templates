@@ -248,6 +248,23 @@ a {
   font-weight: 700;
 }
 
+/* --------------------------------------
+    Airdrop Crap
+----------------------------------------- */
+.airdrop {
+  width: 100%;
+}
+
+.airdrop .fixed-size {
+  width: 70px;
+}
+
+.airdrop .floating {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 /* -------------------------------------
     RESPONSIVE AND MOBILE FRIENDLY STYLES
 ------------------------------------- */
