@@ -257,8 +257,13 @@ a {
 }
 
 .airdrop .fixed-size {
-  width: 70px;
-  min-width: 70px;
+  width: 80px;
+  min-width: 80px;
+}
+
+.airdrop .fixed-size.fixed-size-small {
+  width: 60px;
+  min-width: 60px;
 }
 
 .airdrop .floating {
