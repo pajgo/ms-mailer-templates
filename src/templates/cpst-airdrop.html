@@ -33,6 +33,7 @@
                         <thead>
                           <tr>
                             <th class="fixed-size alignleft">Period</th>
+                            <th class="fixed-size alignleft">Balance</th>
                             <th class="fixed-size alignleft">Tokens</th>
                             <th class="floating alignleft">Tx Hash</th>
                           </tr>
@@ -40,8 +41,15 @@
                         <tbody>
                           {{#each periods}}
                           <tr>
-                            <td class="fixed-size">{{ period }}</td>
-                            <td class="fixed-size">
+                            <td class="fixed-size alignleft">{{ period }}</td>
+                            <td class="fixed-size alignleft">
+                              {{#if ineligible}}
+                              -/-
+                              {{else}}
+                              {{ balance }}
+                              {{/if}}
+                            </td>
+                            <td class="fixed-size alignleft">
                               {{#if ineligible}}
                               -/-
                               {{else}}
