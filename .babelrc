@@ -1,11 +1,11 @@
 {
   "plugins": [
-    "transform-es2015-spread",
-    "transform-es2015-destructuring",
-    "transform-strict-mode",
-    "transform-es2015-parameters",
-    "transform-es2015-shorthand-properties",
-    "transform-object-rest-spread",
-    "transform-class-properties"
+    "@babel/plugin-transform-spread",
+    "@babel/plugin-transform-destructuring",
+    "@babel/plugin-transform-strict-mode",
+    "@babel/plugin-transform-parameters",
+    "@babel/plugin-transform-shorthand-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties"
   ]
 }
