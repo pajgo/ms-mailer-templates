@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Accept an invitation</title>
+  <link href="../css/mailgun.css" media="all" rel="stylesheet" type="text/css" inline />
+</head>
+<body itemscope itemtype="http://schema.org/EmailMessage">
+<table class="body-wrap">
+  <tr>
+    <td></td>
+    <td class="container" width="600">
+      <div class="content">
+        <table class="main" width="100%" cellpadding="0" cellspacing="0" itemprop="action" itemscope itemtype="http://schema.org/ConfirmAction">
+          <tr>
+            <td class="content-wrap">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block">
+                    <strong>
+                      Dear {{ firstName }} {{ lastName }},
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block">
+                    Follow the link to accept an invitation to {{ organization  }} organization
+                  </td>
+                </tr>
+                <tr class="column">
+                  <td class="twelve">
+                    <div class="section-padding" style="text-align: center;">
+                      <a class="rfx-button" href="{{ inviteLink }}">Accept</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block">
+                    &mdash; StreamLayer Team
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>
