@@ -80,7 +80,7 @@ exports.templatesProduction = series(
       }))
       .pipe(htmlmin({ removeComments: true, collapseWhitespace: true, minifyCSS: true }))
       .pipe(dest(`${paths.dist}templates`));
-  },
+  }
 );
 
 // reload connect
