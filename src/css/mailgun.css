@@ -144,8 +144,12 @@ p li, ul li, ol li {
     LINKS & BUTTONS
 ------------------------------------- */
 a {
-  color: #FF008B;
+  color: #191919;
   text-decoration: underline;
+}
+
+a:hover {
+  color: #484848;
 }
 
 .block {
@@ -155,8 +159,8 @@ a {
 .btn-primary {
   text-decoration: none;
   color: #FFF;
-  background-color: #FF008B;
-  border: solid #FF008B;
+  background-color: #191919;
+  border: solid #191919;
   border-width: 10px 20px;
   line-height: 2em;
   /* 2em * 14px = 28px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
@@ -167,6 +171,11 @@ a {
   display: inline-block;
   border-radius: 5px;
   text-transform: capitalize;
+}
+
+.btn-primary:hover {
+  background-color: #484848;
+  border-color: #484848;
 }
 
 /* -------------------------------------

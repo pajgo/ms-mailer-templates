@@ -18,7 +18,7 @@ p {
 }
 
 .cappasity-accent {
-  color: rgb(242, 12, 139);
+  color: #191919;
 }
 
 .cappasity-subtle {
@@ -27,7 +27,7 @@ p {
 }
 
 .cappasity-button {
-  background-color: rgb(242, 12, 139);
+  background-color: #191919;
   display: inline-block;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -42,7 +42,7 @@ p {
 }
 
 .cappasity-button:hover {
-  background-color: rgb(255, 0, 139);
+  background-color: #484848;
 }
 
 address {
