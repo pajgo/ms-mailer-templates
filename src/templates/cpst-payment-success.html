@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Activate Your Account</title>
+  <title>Cappasity payment success</title>
   <link href="../css/cappasity-new.css" media="all" rel="stylesheet" type="text/css" inline />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
@@ -21,24 +21,25 @@
                   <!-- @include _partials/cpst-logo.html -->
                   <tr>
                     <td class="content-block header aligncenter bg-success">
-                      <img src="https://cdn.cappasity.com/mail/cpst-activate.png" width="96" height="96" alt="activate icon" />
-                      Activate your Cappasity account
+                      <img src="https://cdn.cappasity.com/mail/cpst-payment-success.png" width="96" height="96" alt="activate icon" />
+                      Your payment was successful
                     </td>
                   </tr>
                   <tr><td class="content-block"></td></tr>
   								<tr>
-  									<td class="text">
+  									<td class="content-block text">
                       <p>
-                        Dear {{ firstName }} {{ lastName }}.
+                        Your payment has been successfully completed. Thank you for using Cappasity!
                       </p>
                       <p>
-                        Thank you for signing up to Cappasity. Please confirm your email address to activate your account.
+                        Data: <strong>{{ payDate }}</strong>
+                        <br>
+                        Amount: <strong>{{ payAmount }}</strong>
                       </p>
-  									</td>
-  								</tr>
-  								<tr>
-  									<td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
-  										<a href="{{ link  }}{{ qs }}" class="btn-primary" itemprop="url">Activate email address</a>
+                      <p class="last">
+                        If you have any questions, please contact us at
+                        <a href="mailto:{{ supportEmail }}">{{ supportEmail }}</a>
+                      </p>
   									</td>
   								</tr>
   								<tr>

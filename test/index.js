@@ -29,7 +29,7 @@ describe('TemplateSuite', function testSuite() {
       .then(function inspectError(promise) {
         expect(promise.isRejected()).to.be.eq(false);
         expect(promise.isFulfilled()).to.be.eq(true);
-        expect(promise.value()).to.match(/Confirm email address/m);
+        expect(promise.value()).to.match(/Activate email address/m);
       });
   });
 
@@ -39,7 +39,7 @@ describe('TemplateSuite', function testSuite() {
       .then(function inspectError(promise) {
         expect(promise.isRejected()).to.be.eq(false);
         expect(promise.isFulfilled()).to.be.eq(true);
-        expect(promise.value()).to.match(/Confirm email address/m);
+        expect(promise.value()).to.match(/Activate email address/m);
       });
   });
 });

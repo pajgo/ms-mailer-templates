@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Password Reset</title>
-  <link href="../css/mailgun.css" media="all" rel="stylesheet" type="text/css" inline />
+  <link href="../css/cappasity-new.css" media="all" rel="stylesheet" type="text/css" inline />
 </head>
 <body itemscope itemtype="http://schema.org/EmailMessage">
 <table class="body-wrap">
@@ -17,16 +17,22 @@
             <td class="content-wrap">
               <meta itemprop="name" content="Password Reset"/>
               <table width="100%" cellpadding="0" cellspacing="0">
+                <!-- @include _partials/cpst-logo.html -->
                 <tr>
-                  <td class="content-block">
-                    <strong>
-                      Dear {{ firstName }} {{ lastName }},
-                    </strong>
+                  <td class="content-block header aligncenter bg-error">
+                    <img src="https://cdn.cappasity.com/mail/cpst-reset.png" width="96" height="96" alt="Header logo" />
+                    Reset your Cappasity password
                   </td>
                 </tr>
+                <tr><td class="content-block"></td></tr>
                 <tr>
-                  <td class="content-block">
-                    Someone requested that the password for your Cappasity account be reset.
+                  <td class="text">
+                    <p>
+                      Dear {{ firstName }} {{ lastName }}.
+                    </p>
+                    <p>
+                      Someone requested that the password for your Cappasity account be reset.
+                    </p>
                   </td>
                 </tr>
                 <tr>
@@ -35,26 +41,22 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="content-block">
-                    If you did not request new password you can ignore this email or contact us by replying to this email. Your password won't change until you create a new password.
+                  <td class="text content-block">
+                    If you have not requested the password reset, ignore this email or contact us by replying to this email. Your password won't change until you create a new password.
                   </td>
                 </tr>
                 <tr>
-                  <td class="content-block">
-                    &mdash; Cappasity 3D Team
+                  <td class="muted">
+                    Best,<br>
+                    Cappasity Team
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
         </table>
-        <div class="footer">
-          <table width="100%">
-            <tr>
-              <td class="aligncenter content-block">Follow <a href="https://twitter.com/cappasity">@Cappasity</a> on Twitter.</td>
-            </tr>
-          </table>
-        </div></div>
+        <!-- @include _partials/cpst-footer.html -->
+      </div>
     </td>
     <td></td>
   </tr>
