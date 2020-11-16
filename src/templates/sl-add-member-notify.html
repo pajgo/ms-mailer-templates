@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>You have been registered to a new organization</title>
+  <title>You have been added to a new organization</title>
   <link href="../css/mailgun.css" media="all" rel="stylesheet" type="text/css" inline />
 </head>
 <body itemscope itemtype="http://schema.org/EmailMessage">
@@ -25,18 +25,14 @@
                 </tr>
                 <tr>
                   <td class="content-block">
-                    You have been registered to StreamLayer by {{ organization }}.
-                    You can log in using credentials.
-                    login: {{ email }}
-                    password: {{ password }}
-
-                    Don't forget to change your password after login.
+                    You have been added to StreamLayer by {{ organization }}.
+                    You can log in using your previous credentials using the login: {{ email }}.
                   </td>
                 </tr>
                 <tr class="column">
                   <td class="twelve">
                     <div class="section-padding" style="text-align: center;">
-                      <a class="rfx-button" href="{{ link }}{{ qs }}">Login to StreamLayer Studio</a>
+                      <a class="rfx-button" href="{{ link }}{{ qs }}">StreamLayer Studio</a>
                     </div>
                   </td>
                 </tr>
