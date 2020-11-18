@@ -50,6 +50,6 @@
     "gulp-preprocess": "^3.0.3",
     "imagemin-pngcrush": "^6.0.0",
     "mocha": "^6.2.0",
-    "semantic-release": "^15.13.24"
+    "semantic-release": "^17.2.3"
   }
 }
