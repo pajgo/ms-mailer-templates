@@ -3,52 +3,56 @@
 <head>
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Confirm Your Email</title>
-  <link href="../css/mailgun.css" media="all" rel="stylesheet" type="text/css" inline />
+  <title>Activate Your Account</title>
+  <link href="../css/cappasity-new.css" media="all" rel="stylesheet" type="text/css" inline />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body itemscope itemtype="http://schema.org/EmailMessage">
   <table class="body-wrap">
   	<tr>
   		<td></td>
-  		<td class="container" width="600">
+  		<td class="container">
   			<div class="content">
   				<table class="main" width="100%" cellpadding="0" cellspacing="0" itemprop="action" itemscope itemtype="http://schema.org/ConfirmAction">
   					<tr>
   						<td class="content-wrap">
   							<meta itemprop="name" content="Confirm Email"/>
   							<table width="100%" cellpadding="0" cellspacing="0">
+                  <!-- @include _partials/cpst-logo.html -->
+                  <tr>
+                    <td class="content-block header aligncenter bg-success">
+                      <img src="https://cdn.cappasity.com/mail/cpst-activate.png" width="96" height="96" alt="activate icon" />
+                      Activate your Cappasity account
+                    </td>
+                  </tr>
+                  <tr><td class="content-block"></td></tr>
   								<tr>
-  									<td class="content-block">
-                      Dear {{ firstName }} {{ lastName }},
-  									</td>
-  								</tr>
-  								<tr>
-  									<td class="content-block">
-                      Thank you for signing up to Cappasity. Please confirm your email address to activate your account.
+  									<td class="text">
+                      <p>
+                        Hi{{#if name}} {{ name }}{{/if}},
+                      </p>
+                      <p>
+                        Thank you for signing up to Cappasity. Please confirm your email address to activate your account.
+                      </p>
   									</td>
   								</tr>
   								<tr>
   									<td class="content-block" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
-  										<a href="{{ link  }}{{ qs }}" class="btn-primary" itemprop="url">Confirm email address</a>
+  										<a href="{{ link  }}{{ qs }}" class="btn-primary" itemprop="url">Activate email address</a>
   									</td>
   								</tr>
   								<tr>
-  									<td class="content-block">
-  										Sincerely,<br>
-                      Cappasity 3D Team
+  									<td class="muted">
+  										Best,<br>
+                      Cappasity Team
   									</td>
   								</tr>
   							</table>
   						</td>
   					</tr>
   				</table>
-  				<div class="footer">
-  					<table width="100%">
-  						<tr>
-  							<td class="aligncenter content-block">Follow <a href="https://twitter.com/cappasity">@Cappasity</a> on Twitter.</td>
-  						</tr>
-  					</table>
-  				</div></div>
+          <!-- @include _partials/cpst-footer.html -->
+        </div>
   		</td>
   		<td></td>
   	</tr>
